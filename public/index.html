@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>M-Browser</title>
+    <link rel="stylesheet" href="window.css">
+    <script src="../build/window.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="window">
+        <div id="title-bar">
+            <span>M-Browser</span>
+        </div>
+        <div id="header">
+            <input id="urlin" type="text" onkeypress="KeyPressed(event.keyCode);" />
+        </div>
+        <div id="view-container">
+            <webview id="view" src=""></webview>
+        </div>
+        <div id="footer">
+            <button type="button" id="closed" onclick="ClosePressed()">close</button>
+        </div>
+    </div>
+</body>
+
+</html>
